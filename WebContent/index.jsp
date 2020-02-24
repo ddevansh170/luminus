@@ -96,32 +96,21 @@ position: relative;
 left: 21px;
 }
 .cancel{
-position: relative;
+position: absolute;
 right: 20px;
 }
 .save{
-position: relative;
+position: absolute;
 right: 20px;
 }
 </style>
-<script>
-function systemRole(checkbox){
-	//var systemRole = document.getElementById("systemRole");
-	if(checkbox.checked){
-		alert("yes");
-	}else{
-		alert("no");
-	}
-	
-}
 
-</script>
 
 </head>
 <body>
 <div id="heading" class="heading2">Luminis Role Management</div>
 
-<<!-- Roles Table -->
+<!-- Roles Table -->
 
 <div id="roles" class="roles" style="overflow-y:auto;">Roles <br>
 <table width=100% class="table table-hover table-striped table-bordered table-condensed">
@@ -157,7 +146,7 @@ function systemRole(checkbox){
 </table>
 </div>
 
-<<!--  Properties  -->
+<!--  Properties  -->
 
 <div id="info" class="info">Properties<hr> <p></p>
 	Id: <div id="id" class="id"></div>
@@ -170,19 +159,19 @@ function systemRole(checkbox){
 </div>
 
 
-<<!-- Return To Full Page -->
+<!-- Return To Full Page -->
 
 <div id="return" class="return"><a href="home.jsp">Return To Full Page</a></div>
 
 
-<<!-- Create New Role  -->
+<!-- Create New Role  -->
 
 <div id="ex1" class="modal">
 Create New Role<hr><p></p><br><br>
 <form>
 Description <span style="color:red;">*</span> <input type="text" id="descNew" class="desc"
 				  onfocusout="validate()"><br>
-<span id="warningNew" class="warning" style="color:red;font-size:11px;">Description cannot be empty</span>
+<span id="warningNew" class="warning" style="color:red;font-size:11px;"></span>
 				  
 <br><br>
 <label for="systemRoleNew">System Role </label>
@@ -200,7 +189,7 @@ Description <span style="color:red;">*</span> <input type="text" id="descNew" cl
 
 
 
-<<!-- Edit Role Properties  -->
+<!-- Edit Role Properties  -->
 
 <div id="ex2" class="modal">
 Edit Role Properties<hr><p></p>
@@ -222,7 +211,7 @@ Description <span style="color:red;">*</span> <input type="text" id="descEdit" c
 </div>
 
 
-<<!-- Operation Succesful  -->
+<!-- Operation Succesful  -->
 
 <div id="successMessage" class="modal">
 Operation Succesful<hr><p></p>
@@ -231,7 +220,7 @@ Operation Succesful.<p></p>
 </div>
 
 
-<<!-- System Delete Box -->
+<!-- System Delete Box -->
 
 <div id="systemDelete" class="modal">
 <hr><p></p>
@@ -240,7 +229,7 @@ This is a system Role.<p></p>
 </div>
 
 
-<<!-- Non System Delete Box  -->
+<!-- Non System Delete Box  -->
 
 <div id="nonSystemDelete" class="modal">
 <hr><p></p>
