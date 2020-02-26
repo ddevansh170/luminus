@@ -2,18 +2,19 @@
  * 
  */
 function validate(){
-	var desc = document.getElementById("desc").value;
+	var desc = document.getElementById("descNew").value;
 	
 	if(desc == null || desc == ""){
-		document.getElementById("warningNew").innerHTML = "Description cannot be empty";
-	
+		document.getElementById("warningNew").innerHTML = "Description cnnot be empty";	
 	}
 	
 }
 
 
+
+
 function func(chk) {
-	var desc = document.getElementById("desc").value;
+	var desc = document.getElementById("descNew").value;
 	
 	if(desc == null || desc == ""){
 		document.getElementById("warningNew").innerHTML = "Description cannot be empty";	

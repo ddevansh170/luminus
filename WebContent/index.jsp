@@ -3,16 +3,18 @@
 <html>
 <head>
 <title>Role Managament</title>
-<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- table layout -->
+<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-
+<!-- modal pop up -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+ -->
 <script>
 
 </script>
@@ -20,12 +22,8 @@
 
 <style>
 
-.heading{
-position:absolute;
-top:200px;
-left:150px;
-font-size:30px;
-}
+
+
 
 .link{
 position:absolute;
@@ -38,12 +36,7 @@ a {
     color: blue;
 }
 
-.heading2{
-position:absolute;
-top:100px;
-left:100px;
-font-size:25px;
-}
+
 .return{	
 position:absolute;
 top:115px;
@@ -62,7 +55,7 @@ border: 1px solid black;
 }
 .info{
 position: relative;
-top: 145px;
+top: 150px;
 left: 370px;
 width: 550px;
 height: 300px;
@@ -95,14 +88,36 @@ left: 45px;
 position: relative;
 left: 21px;
 }
-.cancel{
-position: absolute;
-right: 20px;
-}
 .save{
 position: absolute;
-right: 20px;
+right: 30px;
+bottom:30px;
+color: black;
+width: 60px;
+padding: 1px;
+border-radius: 5px;
 }
+.cancel{
+position: absolute;
+right: 120px;
+bottom:30px;
+color: black;
+width: 60px;
+padding: 1px;
+border-radius: 5px;
+}
+.save:hover {
+  background-color: #A9A9A9;
+}
+.cancel:hover {
+  /* Green */
+  background-color: #A9A9A9;
+}
+
+.roles {
+    @include ''
+}
+
 </style>
 
 
