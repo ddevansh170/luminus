@@ -25,12 +25,7 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
 
 
-.link{
-position:absolute;
-top:290px;
-left:150px;
-font-size:15px		
-}
+
 
 a { 
     color: blue;
