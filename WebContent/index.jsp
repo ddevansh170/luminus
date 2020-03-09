@@ -16,30 +16,22 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
  -->
 <script>
-
+$(document).ready(function()	{		
+	$( "#roles" ).load( "http://localhost:8080/demo8/table.jsp" );
+});
 </script>
 
 
 <style>
-
-
-
-
-
-
 a { 
     color: blue;
 }
-
-
 .return{	
 position:absolute;
 top:115px;
 left:820px;
 font-size:13px;		
 }
-
-
 .roles{
 position:absolute;
 top: 150px;
@@ -47,6 +39,10 @@ left: 100px;
 width: 260px;
 height: 300px;
 border: 1px solid black;
+}
+.gray{
+
+
 }
 .info{
 position: relative;
@@ -57,9 +53,7 @@ height: 300px;
 border: 1px solid black;
 padding-left: 15px;
 }
-
 .newUser{
-
 position: relative;
 top: 150px;
 left: 860px;
@@ -108,11 +102,9 @@ border-radius: 5px;
   /* Green */
   background-color: #A9A9A9;
 }
-
 .roles {
     @include ''
 }
-
 </style>
 
 
@@ -122,38 +114,8 @@ border-radius: 5px;
 
 <!-- Roles Table -->
 
-<div id="roles" class="roles" style="overflow-y:auto;">Roles <br>
-<table width=100% class="table table-hover table-striped table-bordered table-condensed">
-<thead>
-	<tr>
-		<th width=80%><br></th>
-		<th width=10%></th>
-		<th width=10%></th>
-	</tr>
-</thead>
-<tbody>
-	<tr >
-		<td>ADMIN</td>
-		<td><a href="#ex2" rel="modal:open"><img src="pencil.jpg" height="15" width="15"></a></td>
-		<td><a href="#" rel="cancel:open"><img src="cancel.jpg" height="15" width="15"></a></td>
-	</tr>
-	<tr >
-		<td>student</td>
-		<td><a href="#ex2" rel="modal:open"><img src="pencil.jpg" height="15" width="15"></a></td>
-		<td><a href="#" rel="cancel:open"><img src="cancel.jpg" height="15" width="15"></a></td>
-	</tr>
-	<tr >
-		<td>ALUMINI</td>
-		<td><a href="#ex2" rel="modal:open"><img src="pencil.jpg" height="15" width="15"></a></td>
-		<td><a href="#" rel="cancel:open"><img src="cancel.jpg" height="15" width="15"></a></td>
-	</tr>
-	<tr >
-		<td>creator</td>
-		<td><a href="#ex2" rel="modal:open"><img src="pencil.jpg" height="15" width="15"></a></td>
-		<td><a href="#" rel="cancel:open"><img src="cancel.jpg" height="15" width="15"></a></td>
-	</tr>
-</tbody>	
-</table>
+<div id="roles" class="roles" style="overflow-y:auto;"><div class = "gray">Roles</div> <br>
+
 </div>
 
 <!--  Properties  -->
@@ -193,7 +155,7 @@ Description <span style="color:red;">*</span> <input type="text" id="descNew" cl
 <div id="newMsgNew" class="newMsg" >This is a system Role- Only the Admin.Managed setting can be changed.</div>
 <p></p>
 <a href="#" rel="modal:close"><input type="button" id="cancelNew" class="cancel" value="cancel"></a>
-<input type="button" id="saveNew" class="save" value="save">
+<input type="button" id="saveNew" class="save" value="save" onclick = "savedata()">
 </form>
 </div>
 
@@ -215,7 +177,7 @@ Description <span style="color:red;">*</span> <input type="text" id="descEdit" c
 <div id="newMsgEdit" class="newMs" style="color:red;">This is a system Role- Only the Admin.Managed setting can be changed.</div>
 <p></p>
 <a href="#" rel="modal:close"><input type="button" id="cancelEdit" class="cancel" value="cancel"></a>
-<input type="button" id="saveEdit" class="save" value="save">
+<input type="button" id="saveEdit" class="save" value="save" >
 </form>
 
 </div>
